@@ -38,7 +38,7 @@ EELAYER 25 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
-Sheet 7 7
+Sheet 7 8
 Title "DIYPinball Score Display Module"
 Date "Tuesday, August 04, 2015"
 Rev "1.0"

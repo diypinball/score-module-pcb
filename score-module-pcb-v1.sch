@@ -38,7 +38,7 @@ EELAYER 25 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
-Sheet 1 7
+Sheet 1 8
 Title "DIYPinball Score Display Module"
 Date "Tuesday, August 04, 2015"
 Rev "1.0"
@@ -49,7 +49,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Sheet
-S 3650 900  1400 3200
+S 3650 900  1400 3400
 U 5323E468
 F0 "Control Logic" 50
 F1 "control-logic.sch" 50
@@ -86,6 +86,7 @@ F31 "ANODE5" O R 5050 1500 60
 F32 "ANODE6" O R 5050 1600 60 
 F33 "ANODE7" O R 5050 1700 60 
 F34 "ANODE3" O R 5050 1300 60 
+F35 "RGB_OUT" O R 5050 4200 60 
 $EndSheet
 $Comp
 L GND-RESCUE-score-module-pcb-v1 #PWR01
@@ -505,4 +506,23 @@ Wire Wire Line
 	5450 3700 5050 3700
 Wire Wire Line
 	7100 3700 9000 3700
+$Sheet
+S 5450 4300 1650 400 
+U 5629DD81
+F0 "RGB Output" 60
+F1 "rgb-led-output.sch" 60
+F2 "RGB_DATA" I L 5450 4600 60 
+F3 "RGB_5V" I L 5450 4400 60 
+$EndSheet
+Wire Wire Line
+	5050 4200 5200 4200
+Wire Wire Line
+	5200 4200 5200 4600
+Wire Wire Line
+	5200 4600 5450 4600
+Wire Wire Line
+	5450 4400 5300 4400
+Wire Wire Line
+	5300 4400 5300 800 
+Connection ~ 5300 800 
 $EndSCHEMATC

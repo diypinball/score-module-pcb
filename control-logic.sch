@@ -38,7 +38,7 @@ EELAYER 25 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
-Sheet 2 7
+Sheet 2 8
 Title "DIYPinball Score Display Module"
 Date "Tuesday, August 04, 2015"
 Rev "1.0"
@@ -1098,5 +1098,8 @@ NoConn ~ 4050 3600
 NoConn ~ 4050 4900
 Wire Wire Line
 	5050 4800 4050 4800
-NoConn ~ 4050 3700
+Text HLabel 4450 3700 2    60   Output ~ 0
+RGB_OUT
+Wire Wire Line
+	4450 3700 4050 3700
 $EndSCHEMATC
